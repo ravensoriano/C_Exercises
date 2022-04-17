@@ -4,12 +4,14 @@
 //Title: Fahrenheit To Celsius Version Two using For Loop
 #include <stdio.h>
 
+#define MIN_TEMP 0
+#define MAX_TEMP 300
+#define STEP 20
 int main() {
-    float fahrenheit;
-    int max_temp = 300;
+    int fahrenheit;
 
-    for(fahrenheit = 0; fahrenheit <= max_temp; fahrenheit += 20) {
-        printf("Fahrenheit: %3.0f = Celsius: %6.2f\n", fahrenheit, (fahrenheit - 32) * (5.0/9.0));
+    for(fahrenheit = MIN_TEMP; fahrenheit <= MAX_TEMP; fahrenheit += STEP) {
+        printf("Fahrenheit: %3d = Celsius: %6.2f\n", fahrenheit, (fahrenheit - 32) * (5.0/9.0));
     }
 
 
