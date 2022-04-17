@@ -6,7 +6,7 @@
 #include <stdio.h>
 
 int main() {
-    int fahrenheit = 0, celsius = 0;
+    float fahrenheit = 0, celsius = 0;
     int lower = 0, upper = 0, steps = 0;
 
     lower = 0;
@@ -15,8 +15,8 @@ int main() {
 
     fahrenheit = lower;
     while (fahrenheit <= upper) {
-        celsius = (fahrenheit - 32) * 5 / 9;
-        printf("Fahrenheit: %d\t= Celsius: %d\n", fahrenheit, celsius);
+        celsius = (fahrenheit - 32.0) * (5.0 / 9.0);
+        printf("Fahrenheit: %3.0f\t= Celsius: %6.2f\n", fahrenheit, celsius);
         fahrenheit = fahrenheit + steps;
     }
 
