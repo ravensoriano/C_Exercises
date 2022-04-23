@@ -1,1 +1,1 @@
-This Repository contains all the exercises in C Programming Language.
+This Repository contains exercises in C Programming Language.
